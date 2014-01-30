@@ -1,0 +1,31 @@
+import javax.swing.SwingUtilities;
+
+public class map {
+
+	static compress map,readback;
+
+	public static void main(String[] args) {
+		
+		map = new compress();
+		readback = new compress();
+
+		SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                skeleton sk = new skeleton();
+                sk.setVisible(true);
+            }
+        });
+		
+		try {
+			//map.zipFile("PointObjectL.txt","out.txt");
+			
+			//readback.unzipFile("out.txt");
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
